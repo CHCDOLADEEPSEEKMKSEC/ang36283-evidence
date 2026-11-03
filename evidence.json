@@ -1,0 +1,29 @@
+{
+ "site": "ANG36283 — evidence trail",
+ "updated": "2026-11-03",
+ "rules": "Only PUBLIC-RECORD documents and our own photographs. No personal data, no internal notes, no keys. Every item carries a SHA-256 so anyone can verify it is unchanged. Grades: PROVEN (primary document) / OBSERVED (our field record) / OPEN (unresolved).",
+ "items": [
+  {
+   "title": "Registers of Scotland — title plan ANG36283 (A4 print)",
+   "grade": "PROVEN",
+   "date": "2026-11-03",
+   "source": "Registers of Scotland (public register)",
+   "kind": "pdf",
+   "note": "Boundary plan for the 13.30 ha title; individual plot areas are not dimensioned on the sheet.",
+   "sha256": "af9032f9c39dfd1b4debbba8127dd10e8547148232b80888e15eed01b02e76b4",
+   "bytes": 3086613,
+   "file": "evidence/af9032f9c39d_ANG36283_-_Title_Plan__A4_Print_Version_.pdf"
+  },
+  {
+   "title": "Registers of Scotland — title sheet ANG36283 (searched 06-02-2026)",
+   "grade": "PROVEN",
+   "date": "2026-11-03",
+   "source": "Registers of Scotland (public register)",
+   "kind": "pdf",
+   "note": "13.30 ha · proprietor Dundee City Council · first registered 01-04-2005 · Schedule of Leases: 7 entries incl. Design Dundee Ltd 99 yrs £1 p.a. (ANG80392), The Scottish Ministers £1,316,290 p.a. subject to review, Dundee Industrial Heritage Ltd £5 p.a.",
+   "sha256": "58fa0cbb89ff16e604f619bd7c83a5bc537fa030306b9be8621e10beb5080131",
+   "bytes": 177314,
+   "file": "evidence/58fa0cbb89ff_ANG36283_-_Title_sheet.pdf"
+  }
+ ]
+}
