@@ -1,57 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ANG36283 — evidence trail</title>
-<style>
-:root{--bg:#0b0714;--panel:#130d22;--line:#2a2140;--ink:#f2eefa;--dim:#a99cc4;--gold:#e8b44a;--green:#5fd39a;--red:#e8506a;--purple:#8f6bef}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,sans-serif}
-header{padding:26px 20px 18px;border-bottom:1px solid var(--line);max-width:1000px;margin:0 auto}
-h1{margin:0 0 6px;font-size:22px;letter-spacing:.06em;color:var(--gold)}
-.sub{color:var(--dim);font-size:13px;max-width:760px}
-main{max-width:1000px;margin:0 auto;padding:20px}
-.bar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
-.chip{border:1px solid var(--line);background:#1a1230;color:var(--dim);padding:5px 11px;border-radius:999px;font-size:12px;cursor:pointer}
-.chip.on{background:var(--gold);color:#0b0714;border-color:var(--gold);font-weight:700}
-.item{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px;background:var(--panel)}
-.item h3{margin:0 0 4px;font-size:15px}
-.meta{color:var(--dim);font-size:12px;margin-bottom:8px}
-.hash{font-family:ui-monospace,monospace;font-size:11px;color:#7ee0b0;word-break:break-all;background:#0f0b1c;padding:7px 9px;border-radius:7px;border:1px solid #1d1733}
-.g{font-size:10px;padding:2px 7px;border-radius:6px;margin-left:7px;vertical-align:middle}
-.PROVEN{background:#1f4d33;color:#9ff0c4}.OBSERVED{background:#4d3a1f;color:#ffd39f}.OPEN{background:#4d1f2a;color:#ffb3c4}
-a{color:var(--gold)}
-.empty{color:var(--dim);border:1px dashed var(--line);border-radius:12px;padding:22px;text-align:center}
-footer{max-width:1000px;margin:0 auto;padding:16px 20px 40px;color:var(--dim);font-size:12px;border-top:1px solid var(--line)}
-</style></head><body>
-<header>
- <h1>ANG36283 — EVIDENCE TRAIL</h1>
- <div class="sub" id="rules"></div>
-</header>
-<main>
- <div class="bar" id="filters"></div>
- <div id="list"></div>
-</main>
-<footer>Hashes are SHA-256 of the file as published. If a hash ever changes, check the date — we publish corrections, we don't quietly edit. Corrections: <a href="mailto:thedundeejunglist@gmail.com">thedundeejunglist@gmail.com</a></footer>
-<script>
-let all=[],active=new Set(['PROVEN','OBSERVED','OPEN']);
-fetch('evidence.json?v='+Date.now()).then(r=>r.json()).then(D=>{
-  document.getElementById('rules').textContent=D.rules||'';
-  all=D.items||[]; render();
-});
-function render(){
-  const f=document.getElementById('filters');
-  f.innerHTML=['PROVEN','OBSERVED','OPEN'].map(g=>`<span class="chip ${active.has(g)?'on':''}" data-g="${g}">${g}</span>`).join('');
-  f.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{const g=ch.dataset.g;active.has(g)?active.delete(g):active.add(g);render();});
-  const list=document.getElementById('list'); list.innerHTML='';
-  const items=all.filter(i=>active.has(i.grade));
-  if(!items.length){list.innerHTML='<div class="empty">Nothing published yet in this filter. Evidence lands after the 4 Nov field run.</div>';return;}
-  items.forEach(i=>{
-    const el=document.createElement('div'); el.className='item';
-    el.innerHTML=`<h3>${i.title}<span class="g ${i.grade}">${i.grade}</span></h3>
-      <div class="meta">${i.date||''} ${i.source?'· '+i.source:''} ${i.kind?'· '+i.kind:''}</div>
-      ${i.note?`<div style="font-size:13px;margin-bottom:8px">${i.note}</div>`:''}
-      ${i.file?`<div style="margin-bottom:8px"><a href="${i.file}" target="_blank" rel="noopener">open file ↗</a> ${i.bytes?`<span class="meta">(${(i.bytes/1024).toFixed(0)} KB)</span>`:''}</div>`:''}
-      <div class="hash">sha256 ${i.sha256||'—'}</div>`;
-    list.appendChild(el);
-  });
-}
-</script></body></html>
+<title>Moved · ANG36283</title>
+<link rel="canonical" href="https://chcdoladeepseekmksec.github.io/ang36283-site/evidence.html">
+<meta http-equiv="refresh" content="1; url=https://chcdoladeepseekmksec.github.io/ang36283-site/evidence.html">
+<meta name="robots" content="noindex">
+<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0b0714;color:#f2eefa;font:16px/1.6 system-ui,sans-serif;text-align:center;padding:20px}
+a{color:#e8b44a}</style></head><body><div>
+<h1 style="color:#e8b44a;font-size:20px;letter-spacing:.08em">ANG36283 — ONE SITE NOW</h1>
+<p>The record, the map, the evidence trail, the gallery and the media all live in one place.</p>
+<p><a href="https://chcdoladeepseekmksec.github.io/ang36283-site/evidence.html">Take me there &rarr;</a></p>
+<p style="color:#a99cc4;font-size:12px">Old URL kept alive so no link breaks.</p>
+</div></body></html>
